@@ -9,3 +9,14 @@ html {
 @supports (font-variation-settings: normal) {
     html {font-family: "Inter var", "system-ui";}
 }
+
+.hero {
+    padding: 5% 15% 2%;
+}
+
+.hero-circle {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background-color: #fff;
+}

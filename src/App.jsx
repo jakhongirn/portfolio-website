@@ -2,7 +2,14 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className="text-3xl font-bold text-center">Hey Universe! Happy hacking!</div>
+    <div className="bg-lightcolor h-screen w-full">
+
+      <div className="container hero flex justify-center">
+        <div className="hero-circle ">
+
+        </div>
+      </div>
+    </div>
   )
 }
 
