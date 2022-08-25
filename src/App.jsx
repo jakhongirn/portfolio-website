@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './components/Navbar';
+
 
 const App = () => {
   return (
     <div className="bg-lightcolor h-screen w-full">
-
-      <div className="container hero flex justify-center">
+      <Navbar />
+      <div className="hero flex justify-center">
         <div className="hero-circle ">
 
         </div>
