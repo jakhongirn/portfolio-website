@@ -1,16 +1,17 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './layout/Layout'
+import Homepage from './pages/Homepage';
 
 
 const App = () => {
   return (
-    <div className="bg-lightcolor h-screen w-full">
-      <Navbar />
-      <div className="hero flex justify-center">
-        <div className="hero-circle ">
-
-        </div>
-      </div>
+    <div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Homepage />} exact />
+        </Routes>
+      </Layout>
     </div>
   )
 }
