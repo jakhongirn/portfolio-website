@@ -32,7 +32,7 @@ const Hero = () => {
               Full Stack Developer / React.js Lover
             </h2>
 
-            <button className="mt-10 text-lg font-semibold uppercase bg-[#E8E8E8] py-2 px-4 flex items-center gap-2 rounded-full">
+            <button className="mt-10 text-lg font-medium uppercase bg-[#E8E8E8] py-2 px-4 flex items-center gap-2 rounded-full">
               See my works{' '}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
