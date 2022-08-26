@@ -1,16 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className="h-20 w-full fixed top-0 bg-transparent pt-5 px-16">
+    <div className="h-20 w-full fixed z-10 top-0 bg-transparent pt-5 px-16">
         <nav className="flex justify-between items-end text-[#777777]">
             <div className="">
-                <a href="" className="text-5xl text-black font-bold">JN</a>
+                <Link to="/" className="text-5xl text-black font-bold">JN</Link>
             </div>
                 <div className="flex justify-end gap-10">
-                    <a href="">About</a>
-                    <a href="">Works</a>
-                    <a href="">Contact</a>
+                    <Link to="/about">About</Link>
+                    <Link to="/works">Works</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
         </nav>
     </div>
