@@ -2,7 +2,7 @@ import React from 'react'
 
 const ViewAll = () => {
   return (
-    <div className="px-[15%] pt-[10%] pb-8">
+    <div className="px-[15%] py-[10%]">
         <p className="uppercase graytext text-sm tracking-widest">there's more</p>
         <a href="/works">
             <h1 className="text-4xl mt-4 font-bold">view all projects

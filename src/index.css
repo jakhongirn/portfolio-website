@@ -53,3 +53,14 @@ html {
     border-radius: 50%;
     background-color: #fff;
 }
+
+.circ1, .circ3 {
+    fill: none;
+}
+.circ2 {
+    clip-path: url(#clip-path);
+}
+.circ3 {
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
