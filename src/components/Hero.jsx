@@ -26,7 +26,7 @@ const Hero = () => {
               <br />
               I'm Jakhongir.
               <br />
-              Software Engineer
+              Software Engineer.
             </h1>
             <h2 className="text-2xl mt-10">
               Full Stack Developer / React.js Lover
@@ -51,9 +51,9 @@ const Hero = () => {
             </button>
 
             <div className="mt-10">
-              <a className="mr-6 underline" href="">Github</a> <span>/</span>
-              <a className="mx-6 underline" href="">Likedin</a> <span>/</span>
-              <a className="mx-6 underline" href="">Twiter</a>
+              <a className="mr-6 underline" href="https://github.com/jaykhans">Github</a> <span>/</span>
+              <a className="mx-6 underline" href="https://www.linkedin.com/in/jakhongirnagmatov/">Linkedin</a> <span>/</span>
+              <a className="mx-6 underline" href="https://twitter.com/jakhongir_mir">Twitter</a>
 
             </div>
           </div>

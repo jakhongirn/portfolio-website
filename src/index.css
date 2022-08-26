@@ -2,13 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    font-family: "Inter", "system-ui";
+@font-face {
+    font-family: "VisueltPro";
+    src: local("VisueltPro"),
+     url("./fonts/VisueltPro-Regular.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "VisueltPro";
+    src: local("VisueltPro"),
+     url("./fonts/VisueltPro-Light.woff") format("woff");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "VisueltPro";
+    src: local("VisueltPro"),
+     url("./fonts/VisueltPro-Medium.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "VisueltPro";
+    src: local("VisueltPro"),
+     url("./fonts/VisueltPro-Bold.woff") format("woff");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "VisueltPro";
+    src: local("VisueltPro"),
+     url("./fonts/VisueltPro-Black.woff") format("woff");
+    font-weight: 900;
 }
 
-@supports (font-variation-settings: normal) {
-    html {font-family: "Inter var", "system-ui";}
+html {
+    font-family: "VisueltPro", "system-ui", sans-serif;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
