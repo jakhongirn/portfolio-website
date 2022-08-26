@@ -19,7 +19,7 @@ const Hero = () => {
                 />
               </svg></div>
         <div className="hero-circle "></div>
-        <div className="w-full px-64 absolute  grid grid-cols-2  justify-center items-end bottom-[13%]">
+        <div className="w-full px-[15%] absolute  grid grid-cols-2  justify-center items-end bottom-[13%]">
           <div>
             <h1 className="text-5xl font-semibold">
               Hi,
