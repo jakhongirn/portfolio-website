@@ -5,6 +5,12 @@
 @font-face {
     font-family: "VisueltPro";
     src: local("VisueltPro"),
+     url("./fonts/VisueltPro-ExtraLight.woff") format("woff");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "VisueltPro";
+    src: local("VisueltPro"),
      url("./fonts/VisueltPro-Regular.woff") format("woff");
     font-weight: 400;
 }
