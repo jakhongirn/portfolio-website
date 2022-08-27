@@ -50,12 +50,7 @@ const Hero = () => {
               </svg>
             </button>
 
-            <div className="mt-10">
-              <a className="mr-6 underline" href="https://github.com/jaykhans">Github</a> <span>/</span>
-              <a className="mx-6 underline" href="https://www.linkedin.com/in/jakhongirnagmatov/">Linkedin</a> <span>/</span>
-              <a className="mx-6 underline" href="https://twitter.com/jakhongir_mir">Twitter</a>
-
-            </div>
+  
           </div>
           <div>
             <img src="images/ceaser.png" alt="" className="w-[30rem]" />
