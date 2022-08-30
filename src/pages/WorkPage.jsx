@@ -40,7 +40,13 @@ const WorkPage = () => {
         />
         <WorkImage imageName="ecogosht.png"/>
 
-        
+        <WorkImage imageName="shuboarch.png"/>
+        <WorkContent 
+            class="ml-28"
+            title="Architectural and interior design services"
+            type="Web app"
+            content="Website for company asd that offers interior and exterior design services for all types of buildings."
+        />
 
       </div>
         
