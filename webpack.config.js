@@ -7,13 +7,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'index_bundle.js',
+    publicPath: '/'
   },
   target: 'web',
   devServer: {
-    port: '5000',
+    port: '3000',
     static: {
       directory: path.join(__dirname, 'public')
 },
+    historyApiFallback: true,
     open: true,
     hot: true,
     liveReload: true,
@@ -29,7 +31,7 @@ module.exports = {
         use: 'babel-loader', 
       },
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
