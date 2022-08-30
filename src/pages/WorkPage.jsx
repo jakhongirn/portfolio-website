@@ -1,5 +1,6 @@
 import React from 'react'
 import { WorkImage, WorkContent } from '../components/cards/Work'
+import GhProject from '../components/cards/GhProject'
 
 const WorkPage = () => {
   return (
@@ -43,11 +44,30 @@ const WorkPage = () => {
         <WorkImage imageName="shuboarch.png"/>
         <WorkContent 
             class="ml-28"
-            title="Architectural and interior design services"
+            title="architectural and interior design services"
             type="Web app"
             content="Website for company asd that offers interior and exterior design services for all types of buildings."
         />
+        <WorkContent
+            class="mr-28"
+            title="portfolio/cv website "
+            type="Front-end App"
+            content="Older version of my portfolio website"
+        />
+        <WorkImage imageName="myportfolio.png"/>
 
+      </div>
+
+      <div className="mt-36">
+            <h1 className="text-4xl font-bold">GitHub Projects.</h1>
+            <GhProject projectNumber="/ 01" projectName="blog-website" />
+            <GhProject projectNumber="/ 02" projectName="react-todo app" />
+            <GhProject projectNumber="/ 03" projectName="contact-form (with telegram)" />
+            <GhProject projectNumber="/ 04" projectName="react-intro app" />
+            <GhProject projectNumber="/ 05" projectName="Quiz maker" />
+            <GhProject projectNumber="/ 06" projectName="signup-mail form" />
+            <GhProject projectNumber="/ 07" projectName="instagram-follower bot" />
+            <GhProject projectNumber="/ 08" projectName="to-do app (node.js)" />
       </div>
         
     </div>

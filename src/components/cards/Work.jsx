@@ -11,6 +11,7 @@ function WorkContent(props) {
       </p>
       <Button 
       btnName="View project"
+      addClass="absolute bottom-4"
       />
     </div>
   )
