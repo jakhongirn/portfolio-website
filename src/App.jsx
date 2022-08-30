@@ -4,6 +4,7 @@ import Layout from './layout/Layout'
 import Homepage from './pages/Homepage';
 import AboutPage from './pages/AboutPage'
 import WorkPage from './pages/WorkPage';
+import NoPage from './pages/404Page';
 
 
 const App = () => {
@@ -11,9 +12,10 @@ const App = () => {
     <div>
       <Layout>
         <Routes>
-          {/* <Route path="/" element={<Homepage />} exact />
-          <Route path="/about" element={<AboutPage />}/> */}
-          <Route path="/" element={<WorkPage />}/>
+          <Route exact path="/" element={<Homepage />}  />
+          <Route path="about" element={<AboutPage />}/>
+          <Route path="works" element={<WorkPage />}/>
+          <Route path="*" element={<NoPage />} />
         </Routes>
       </Layout>
     </div>
