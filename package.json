@@ -25,6 +25,7 @@
     "webpack-dev-server": "^4.10.0"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "autoprefixer": "^10.4.8",
     "css-loader": "^6.7.1",
     "inter-ui": "^3.19.3",
