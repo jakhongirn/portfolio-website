@@ -52,9 +52,7 @@ const Hero = () => {
 
   
           </div>
-          <div>
-            <img src="images/ceaser.png" alt="" className="w-[30rem]" />
-          </div>
+          
         </div>
       </div>
     </div>
