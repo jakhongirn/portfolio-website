@@ -7,10 +7,10 @@ import WorksTitle from '../components/WorksTitle'
 const Homepage = () => {
   return (
     <div>
-        <Hero />
-        <WorksTitle />
-        <Works />
-        <ViewAll />
+      <Hero />
+      <WorksTitle />
+      <Works />
+      <ViewAll />
     </div>
   )
 }

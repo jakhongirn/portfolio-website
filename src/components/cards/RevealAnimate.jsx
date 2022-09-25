@@ -1,8 +1,4 @@
 import React, {useRef} from 'react'
-import Reveal from "react-awesome-reveal";
-import { keyframes } from '@emotion/react';
-import OnVisible from 'react-on-visible';
-import useElementOnScreen from './useElementOnScreen';
 import { useInViewport } from 'react-in-viewport';
 
 const RevealAnimate = (props) => {
