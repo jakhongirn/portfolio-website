@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-black text-white px-[15%] pt-[10%]">
       <h1 className="text-5xl text-center font-bold">Let's collaborate.</h1>
       <p className="text-center mt-4 text-graytext">
-        I'm available for Consultancy & Freelancing.
+        I'm available for Freelancing & Partnership
       </p>
       <div className="flex justify-center">
         <Button btnName="Say Hello" btnClass="bg-graytext" />
