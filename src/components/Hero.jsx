@@ -1,5 +1,6 @@
 import React from 'react'
 import RevealAnimate from './cards/RevealAnimate';
+import FadeUp from './cards/FadeUp';
 
 const Hero = () => {
   return (
@@ -31,11 +32,13 @@ const Hero = () => {
                 <RevealAnimate>Software Engineer.</RevealAnimate>
               </h1>
             
-            <h2 className="text-2xl mt-10">
-              Full Stack Developer / React.js Lover
-            </h2>
+            <FadeUp>
+              <h2 className="text-2xl mt-10">
+                Full Stack Developer / React.js Lover
+              </h2>
+            </FadeUp>
 
-            
+            <FadeUp>
               <button className="mt-10 text-lg font-medium uppercase bg-[#E8E8E8] py-2 px-4 flex items-center gap-2 rounded-full">
                 See my works
                 <svg
@@ -53,6 +56,7 @@ const Hero = () => {
                   />
                 </svg>
               </button>
+              </FadeUp>
             
 
   
