@@ -9,7 +9,7 @@ const Footer = () => {
         I'm available for Consultancy & Freelancing.
       </p>
       <div className="flex justify-center">
-        <Button btnName="Say Hello" addClass="bg-graytext" />
+        <Button btnName="Say Hello" btnClass="bg-graytext" />
       </div>
       <div className="flex justify-center gap-x-6 pt-[10%]">
         <a href="https://github.com/jaykhans">

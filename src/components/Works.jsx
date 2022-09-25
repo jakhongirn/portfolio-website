@@ -1,11 +1,12 @@
 import React from 'react'
-import { WorkContent, WorkImage } from './cards/Work'
+import { WorkContent, WorkImage } from './cards/Work';
+import RevealAnimate from './cards/RevealAnimate';
 
 const Works = () => {
   return (
     <div className="bg-lightcolor px-[15%] py-[5%]">
       <div className="grid grid-cols-3 gap-y-20">
-        <WorkImage imageName="meras.uz.png"/>
+          <WorkImage imageName="meras.uz.png"/>
         <WorkContent 
             class="ml-28"
             title="meras electro mechanic website"
