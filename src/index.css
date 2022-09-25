@@ -3,70 +3,123 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "VisueltPro";
-    src: local("VisueltPro"),
-     url("./fonts/VisueltPro-ExtraLight.woff") format("woff");
-    font-weight: 200;
+  font-family: "VisueltPro";
+  src: local("VisueltPro"),
+    url("./fonts/VisueltPro-ExtraLight.woff") format("woff");
+  font-weight: 200;
 }
 @font-face {
-    font-family: "VisueltPro";
-    src: local("VisueltPro"),
-     url("./fonts/VisueltPro-Regular.woff") format("woff");
-    font-weight: 400;
+  font-family: "VisueltPro";
+  src: local("VisueltPro"),
+    url("./fonts/VisueltPro-Regular.woff") format("woff");
+  font-weight: 400;
 }
 @font-face {
-    font-family: "VisueltPro";
-    src: local("VisueltPro"),
-     url("./fonts/VisueltPro-Light.woff") format("woff");
-    font-weight: 300;
+  font-family: "VisueltPro";
+  src: local("VisueltPro"), url("./fonts/VisueltPro-Light.woff") format("woff");
+  font-weight: 300;
 }
 @font-face {
-    font-family: "VisueltPro";
-    src: local("VisueltPro"),
-     url("./fonts/VisueltPro-Medium.woff") format("woff");
-    font-weight: 500;
+  font-family: "VisueltPro";
+  src: local("VisueltPro"), url("./fonts/VisueltPro-Medium.woff") format("woff");
+  font-weight: 500;
 }
 @font-face {
-    font-family: "VisueltPro";
-    src: local("VisueltPro"),
-     url("./fonts/VisueltPro-Bold.woff") format("woff");
-    font-weight: 700;
+  font-family: "VisueltPro";
+  src: local("VisueltPro"), url("./fonts/VisueltPro-Bold.woff") format("woff");
+  font-weight: 700;
 }
 @font-face {
-    font-family: "VisueltPro";
-    src: local("VisueltPro"),
-     url("./fonts/VisueltPro-Black.woff") format("woff");
-    font-weight: 900;
-}
-
-html {
-    font-family: "VisueltPro", "system-ui", sans-serif;
+  font-family: "VisueltPro";
+  src: local("VisueltPro"), url("./fonts/VisueltPro-Black.woff") format("woff");
+  font-weight: 900;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "VisueltPro", "system-ui", sans-serif;
 }
 
 .hero {
-    padding: 5% 15% 2%;
+  padding: 5% 15% 2%;
 }
 
 .hero-circle {
-    height: 450px;
-    width: 450px;
-    border-radius: 50%;
-    background-color: #fff;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
-.circ1, .circ3 {
-    fill: none;
+.circ1,
+.circ3 {
+  fill: none;
 }
 .circ2 {
-    clip-path: url(#clip-path);
+  clip-path: url(#clip-path);
 }
 .circ3 {
-    stroke: #fff;
-    stroke-miterlimit: 10;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+@keyframes move {
+  47% {
+    transform-origin: left;
+    animation-mode: forwards;
+    transform: scaleX(1);
+  }
+  50% {
+    transform-origin: right;
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.block-reveal-animation {
+  position: relative;
+  display: inline-block;
+}
+.block-reveal-animation__element {
+  opacity: 0;
+  animation-name: reveal;
+  animation-delay: 1s;
+  animation-duration: 0.01s;
+  animation-fill-mode: both;
+}
+.block-reveal-animation__block {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  background-color: #000;
+
+  animation-name: move;
+  animation-fill-mode: both;
+  transform: scaleX(0);
+  transform-origin: left;
 }
