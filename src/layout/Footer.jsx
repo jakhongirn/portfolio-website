@@ -3,13 +3,14 @@ import Button from '../components/cards/Button'
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white px-[15%] pt-[10%]">
-      <h1 className="text-5xl text-center font-bold">Let's collaborate.</h1>
+    <div className="bg-black text-white px-[15%] pt-[10%] relative">
+      <h1 className="z-10 text-5xl text-center font-bold">Let's work together. <img src="images/circle-pattern.svg" className="absolute top-20  inline w-32" alt="" /></h1>
       <p className="text-center mt-4 text-graytext">
-        I'm available for Freelancing & Partnership
+        I'm available for Freelancing & Partnership 
+        
       </p>
       <div className="flex justify-center">
-        <Button btnName="Say Hello" btnClassName="before:bg-[#303030] hover:before:bg-[#303030]"/>
+        <a href="/contact"><Button btnName="Say Hello" btnClassName="before:bg-[#303030] hover:before:bg-[#303030]"/></a>
       </div>
       <div className="flex justify-center gap-x-6 pt-[10%]">
         <a href="https://github.com/jaykhans">
