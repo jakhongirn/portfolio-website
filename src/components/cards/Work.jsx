@@ -19,7 +19,6 @@ function WorkContent(props) {
       </FadeUp>
         <Button
         btnName="View project"
-        btnClassName=""
         ></Button>
      
     </div>

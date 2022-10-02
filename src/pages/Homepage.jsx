@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import ViewAll from '../components/ViewAll'
 import Works from '../components/Works'
 import WorksTitle from '../components/WorksTitle'
+import GoTop from '../components/cards/GoTop'
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <WorksTitle />
       <Works />
       <ViewAll />
+      <GoTop />
     </div>
   )
 }

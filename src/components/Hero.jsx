@@ -29,7 +29,7 @@ const Hero = () => {
             </FadeUp>
 
             <FadeUp>
-              <Button btnName="SEE MY WORKS" btnTitleClass="uppercase font-medium"/>
+              <a href="/works"><Button btnName="SEE MY WORKS" btnTitleClass="uppercase font-medium"/></a>
               </FadeUp>
             
 
