@@ -13,13 +13,13 @@ function WorkContent(props) {
         <p className="uppercase mt-4 text-sm tracking-widest">{props.type}</p>
       </FadeUp>
       <FadeUp>
-        <p className="mt-10 font-medium text-lg ">
+        <p className="mt-10 font-medium text-lg">
           {props.content}
         </p>
       </FadeUp>
         <Button
         btnName="View project"
-        addClass="absolute bottom-4"
+        btnClassName=""
         ></Button>
      
     </div>

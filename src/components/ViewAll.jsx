@@ -10,7 +10,7 @@ const ViewAll = () => {
         </FadeUp>
         <a href="/works">
             <RevealAnimate>
-              <h1 className="text-4xl mt-4 font-bold">view all projects
+              <h1 className="text-4xl mt-4 font-bold transition-all duration-300 hover:translate-x-3">view all projects
               <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
