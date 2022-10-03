@@ -1,5 +1,6 @@
 import React, {useRef, useState, useEffect} from 'react'
 import emailjs from '@emailjs/browser'
+import RevealAnimate from '../components/cards/RevealAnimate';
 
 
 const ContactPage = () => {
@@ -43,11 +44,13 @@ const ContactPage = () => {
       </div>
       : ''}
         <div className="uppercase tracking-[0.2rem] text-[10px] text-graytext rotate-[270deg] fixed top-64 left-10">contact</div>
-        <div className="relative pb-[10%]">
-            <img src="images/contact-pattern.jpg" className="w-[400px]" alt="" />
-            <h1 className="text-6xl font-bold bg-white absolute top-[40%]">Get in touch.</h1>
-        </div>
-        <p>Do you have questions to ask or request to collaborate with me, feel free to contact me.</p>
+        <RevealAnimate>
+          <div className="relative ">
+              <img src="images/contact-pattern.jpg" className="w-[400px]" alt="" />
+              <h1 className="text-6xl font-bold bg-white absolute top-[40%]">Get in touch.</h1>
+          </div>
+        </RevealAnimate>
+        <p className="pt-[10%]">Do you have questions to ask or request to collaborate with me, feel free to contact me.</p>
         <form action="" ref={form} onSubmit={sendEmail} >
             <input className="block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none" type="text" name="name" placeholder='Your Name'/>
             <input className="block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none" type="email" name="email" placeholder='Your mail'/>

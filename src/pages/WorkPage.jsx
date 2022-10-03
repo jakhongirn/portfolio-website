@@ -1,16 +1,19 @@
 import React from 'react'
 import { WorkImage, WorkContent } from '../components/cards/Work'
 import GhProject from '../components/cards/GhProject'
+import RevealAnimate from '../components/cards/RevealAnimate'
 
 const WorkPage = () => {
   return (
     <div className="bg-lightgray py-[15%] px-[15%]">
         <div className="uppercase tracking-[0.2rem] text-[10px] text-graytext rotate-[270deg] fixed top-64 left-10">works</div>
-        <div className="relative pb-[10%]">
-            <img src="images/works-pattern.jpg" className="w-[400px]" alt="" />
-            <h1 className="text-6xl font-bold bg-white absolute top-[40%]">My works.</h1>
-        </div>
-        <div className="grid grid-cols-3 gap-y-24 mt-10">
+        <RevealAnimate>
+            <div className="relative ">
+                <img src="images/works-pattern.jpg" className="w-[400px]" alt="" />
+                <h1 className="text-6xl font-bold bg-white absolute top-[40%]">My works.</h1>
+            </div>
+        </RevealAnimate>
+        <div className="grid grid-cols-3 gap-y-24 mt-10 pt-[10%]">
         <WorkImage imageName="meras.uz.png"/>
         <WorkContent 
             class="ml-28"
@@ -60,7 +63,9 @@ const WorkPage = () => {
       </div>
 
       <div className="mt-36">
-            <h1 className="text-4xl font-bold">GitHub Projects.</h1>
+            <RevealAnimate>
+                <h1 className="text-4xl font-bold">GitHub Projects.</h1>
+            </RevealAnimate>
             <GhProject projectNumber="/ 01" projectName="blog-website" />
             <GhProject projectNumber="/ 02" projectName="react-todo app" />
             <GhProject projectNumber="/ 03" projectName="contact-form (with telegram)" />
