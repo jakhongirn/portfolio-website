@@ -2,6 +2,7 @@ import React from 'react'
 import { WorkImage, WorkContent } from '../components/cards/Work'
 import GhProject from '../components/cards/GhProject'
 import RevealAnimate from '../components/cards/RevealAnimate'
+import GoTop from '../components/cards/GoTop'
 
 const WorkPage = () => {
   return (
@@ -75,7 +76,7 @@ const WorkPage = () => {
             <GhProject projectNumber="/ 07" projectName="instagram-follower bot" />
             <GhProject projectNumber="/ 08" projectName="to-do app (node.js)" />
       </div>
-        
+        <GoTop />
     </div>
   )
 }

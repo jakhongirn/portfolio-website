@@ -1,6 +1,7 @@
 import React, {useRef, useState, useEffect} from 'react'
 import emailjs from '@emailjs/browser'
 import RevealAnimate from '../components/cards/RevealAnimate';
+import GoTop from '../components/cards/GoTop';
 
 
 const ContactPage = () => {
@@ -58,7 +59,7 @@ const ContactPage = () => {
             <textarea className="block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none" rows="5" name="message" placeholder='Message'/>
           <button type="submit" className="py-2 px-4 float-right bg-black border-2 border-black text-white hover:bg-white hover:text-black">Send</button>
         </form>
-
+        <GoTop />
     </div>
   )
 }

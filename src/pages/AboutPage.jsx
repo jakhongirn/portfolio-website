@@ -1,6 +1,7 @@
 import React from 'react'
 import RevealAnimate from '../components/cards/RevealAnimate';
 import { Fade } from 'react-awesome-reveal';
+import GoTop from '../components/cards/GoTop';
 const AboutPage = () => {
   return (
     <div className="px-[15%] bg-lightcolor pb-[10%]">
@@ -106,6 +107,7 @@ const AboutPage = () => {
           </RevealAnimate>
         </div>
       </div>
+      <GoTop />
     </div>
   )
 }
