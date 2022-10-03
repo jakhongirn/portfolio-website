@@ -1,20 +1,19 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './layout/Layout'
 import Homepage from './pages/Homepage';
 import AboutPage from './pages/AboutPage'
 import WorkPage from './pages/WorkPage';
 import ContactPage from './pages/ContactPage'
 import NoPage from './pages/404Page';
-import ScrollTop from './components/cards/ScrollTop'
-
+import {AnimatePresence} from 'framer-motion'
 
 const App = () => {
   return (
-    <div>
-      <ScrollTop>
+    <>
+    <AnimatePresence exitBeforeEnter>
       <Layout>
-        <Routes>
+        <Routes key={location.pathname} location={location}>
           <Route exact path="/" element={<Homepage />}  />
           <Route path="about" element={<AboutPage />}/>
           <Route path="works" element={<WorkPage />}/>
@@ -22,8 +21,8 @@ const App = () => {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Layout>
-      </ScrollTop>
-    </div>
+      </AnimatePresence>
+    </>
   )
 }
 
