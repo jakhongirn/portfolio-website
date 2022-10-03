@@ -6,11 +6,13 @@ import AboutPage from './pages/AboutPage'
 import WorkPage from './pages/WorkPage';
 import ContactPage from './pages/ContactPage'
 import NoPage from './pages/404Page';
+import ScrollTop from './components/cards/ScrollTop'
 
 
 const App = () => {
   return (
     <div>
+      <ScrollTop>
       <Layout>
         <Routes>
           <Route exact path="/" element={<Homepage />}  />
@@ -20,6 +22,7 @@ const App = () => {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Layout>
+      </ScrollTop>
     </div>
   )
 }
