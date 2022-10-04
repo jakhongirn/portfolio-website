@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero flex justify-center relative">
         <ScrollDown />
         <div className="hero-circle "></div>
-        <div className="w-full px-[15%] absolute  grid grid-cols-2  justify-center items-end bottom-[13%]">
+        <div className="w-full px-[15%] absolute grid grid-cols-2 justify-center items-end bottom-[13%]">
           <div>
             
               <h1 className="text-5xl font-semibold ">
@@ -34,6 +34,9 @@ const Hero = () => {
             
 
   
+          </div>
+          <div>
+           <div className="w-100 flex justify-end"><img src="images/me-sticker.png" className="w-[380px]" alt="" /></div>
           </div>
           
         </div>
