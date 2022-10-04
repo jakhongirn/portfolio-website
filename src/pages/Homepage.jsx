@@ -4,23 +4,21 @@ import ViewAll from '../components/ViewAll'
 import Works from '../components/Works'
 import WorksTitle from '../components/WorksTitle'
 import GoTop from '../components/cards/GoTop'
-import { motion } from "framer-motion";
+import { motion, useIsPresent } from "framer-motion";
+import InitialTransition from '../components/cards/Transition'
 
 const Homepage = () => {
+  const isPresent = useIsPresent();
   return (
-    <motion.div
-      className=""
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 3 }}
-    >
+    <div>
       <Hero />
       <WorksTitle />
       <Works />
       <ViewAll />
       <GoTop />
-    </motion.div>
+    
+      <InitialTransition />
+      </div>
   )
 }
 

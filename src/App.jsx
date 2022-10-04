@@ -9,6 +9,7 @@ import NoPage from './pages/404Page';
 import {AnimatePresence} from 'framer-motion'
 
 const App = () => {
+  const location = useLocation()
   return (
     <>
     <AnimatePresence exitBeforeEnter>

@@ -2,16 +2,13 @@ import React from 'react'
 import RevealAnimate from '../components/cards/RevealAnimate';
 import { Fade } from 'react-awesome-reveal';
 import GoTop from '../components/cards/GoTop';
-import { motion } from "framer-motion";
+import { motion, useIsPresent } from "framer-motion";
+import InitialTransition from '../components/cards/Transition'
+
 const AboutPage = () => {
+  const isPresent = useIsPresent();
   return (
-    <motion.div
-      className=""
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 3 }}
-    >
+    
     <div className="px-[15%] bg-lightcolor pb-[10%]">
         <div className="uppercase tracking-[0.2rem] text-[10px] text-graytext rotate-[270deg] fixed top-64 left-10">About</div>
       <div className="grid grid-cols-2 items-center py-[15%]">
@@ -116,8 +113,9 @@ const AboutPage = () => {
         </div>
       </div>
       <GoTop />
+      <InitialTransition />
     </div>
-    </motion.div>
+    
   )
 }
 

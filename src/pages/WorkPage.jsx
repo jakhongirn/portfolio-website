@@ -3,17 +3,13 @@ import { WorkImage, WorkContent } from '../components/cards/Work'
 import GhProject from '../components/cards/GhProject'
 import RevealAnimate from '../components/cards/RevealAnimate'
 import GoTop from '../components/cards/GoTop'
-import { motion } from "framer-motion";
+import { motion, useIsPresent } from "framer-motion";
+import InitialTransition from '../components/cards/Transition'
 
 const WorkPage = () => {
+    const isPresent = useIsPresent()
   return (
-    <motion.div
-      className=""
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 3 }}
-    >
+    
     <div className="bg-lightgray py-[15%] px-[15%]">
         <div className="uppercase tracking-[0.2rem] text-[10px] text-graytext rotate-[270deg] fixed top-64 left-10">works</div>
         <RevealAnimate>
@@ -85,8 +81,9 @@ const WorkPage = () => {
             <GhProject projectNumber="/ 08" projectName="to-do app (node.js)" />
       </div>
         <GoTop />
+       <InitialTransition />
     </div>
-    </motion.div>
+   
   )
 }
 
