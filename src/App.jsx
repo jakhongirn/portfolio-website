@@ -12,7 +12,7 @@ const App = () => {
   const location = useLocation()
   return (
     <>
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <Layout>
         <Routes key={location.pathname} location={location}>
           <Route exact path="/" element={<Homepage />}  />
