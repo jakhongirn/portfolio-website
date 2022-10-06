@@ -8,7 +8,7 @@ const ScrollDown = () => {
         })
       } 
   return (
-    <button onClick={gotoBottomHero} className="transition-all duration-300 hover:translate-y-3 text-sm font-semibold rotate-90 absolute right-2 lg:-right-4 bottom-20 uppercase z-10">Scroll Down 
+    <button onClick={gotoBottomHero} className="transition-all duration-300 hover:translate-y-3 text-sm font-semibold rotate-90 absolute -right-4 bottom-20 uppercase z-10">Scroll Down 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -9,12 +9,12 @@ const Navbar = () => {
   }
 
   return (
-    <div className="lg:h-20 w-full fixed z-10  bg-transparent pt-5 lg:px-16">
+    <div className="lg:h-20 w-full fixed z-10  bg-transparent pt-5 lg:px-16 bg-lightcolor lg:bg-transparent">
       <nav>
         <div className="flex justify-between items-end text-graytext px-4">
         <div>
           <RevealAnimate>
-            <Link to="/" className="text-3xl lg:text-5xl  text-black font-bold">
+            <Link to="/" className="text-3xl md:text-4xl lg:text-5xl  text-black font-bold">
               JN
             </Link>
           </RevealAnimate>

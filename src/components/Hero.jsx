@@ -11,10 +11,10 @@ const Hero = () => {
       <div className="w-full flex justify-center relative">
         <ScrollDown />
         <div className="w-[200px] h-[200px] lg:w-[450px] lg:h-[450px]"></div>
-        <div className="w-full px-[15%] absolute grid grid-cols-1 lg:grid-cols-2 justify-center items-end top-[13%] md:bottom-[13%]">
+        <div className="w-full px-[10%] md:px-[15%] absolute grid grid-cols-1 lg:grid-cols-2 justify-center items-end top-[13%] bottom-[13%]">
           <div>
             
-              <h1 className="text-5xl font-semibold ">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold ">
                 <RevealAnimate>Hi,</RevealAnimate>
                 <br />
                 <RevealAnimate>I'm Jakhongir.</RevealAnimate>
