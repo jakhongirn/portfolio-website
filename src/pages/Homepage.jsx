@@ -4,13 +4,12 @@ import ViewAll from '../components/ViewAll'
 import Works from '../components/Works'
 import WorksTitle from '../components/WorksTitle'
 import GoTop from '../components/cards/GoTop'
-import { motion, useIsPresent } from "framer-motion";
 import InitialTransition from '../components/cards/Transition'
 
 const Homepage = () => {
-  const isPresent = useIsPresent();
+
   return (
-    <div>
+    <div className="w-full">
       <Hero />
       <WorksTitle />
       <Works />

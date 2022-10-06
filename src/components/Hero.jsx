@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import RevealAnimate from './cards/RevealAnimate';
 import FadeUp from './cards/FadeUp';
 import ScrollDown from './cards/ScrollDown';
@@ -8,10 +8,10 @@ const Hero = () => {
 
   return (
     <div className="bg-lightcolor h-screen w-full grid">
-      <div className="hero flex justify-center relative">
+      <div className="w-full flex justify-center relative">
         <ScrollDown />
-        <div className="hero-circle "></div>
-        <div className="w-full px-[15%] absolute grid grid-cols-2 justify-center items-end bottom-[13%]">
+        <div className=" w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] "></div>
+        <div className="w-full px-[15%] absolute grid grid-cols-1 lg:grid-cols-2 justify-center items-end top-[13%] lg:bottom-[13%]">
           <div>
             
               <h1 className="text-5xl font-semibold ">

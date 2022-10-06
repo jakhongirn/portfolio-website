@@ -23,9 +23,9 @@ const GoTop = () => {
     }
 
   return (
-    <>  
+    <div className="w-full relative">  
         {goTop && (
-                        <button onClick={scrollUp} className={`transition-all duration-300 translate-y-0 hover:-translate-y-3 ${animated} rotate-90 text-graytext tracking-widest text-sm font-semibold  fixed right-4 bottom-20 uppercase z-10`}><svg
+                        <button onClick={scrollUp} className={`transition-all duration-300 translate-y-0 hover:-translate-y-3 ${animated} rotate-90 text-graytext tracking-widest text-sm font-semibold fixed right-4 bottom-20 uppercase z-10`}><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -42,7 +42,7 @@ const GoTop = () => {
                             Top
                             </button>                
         )}
-    </>
+    </div>
   )
 }
 
