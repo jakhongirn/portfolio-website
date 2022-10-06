@@ -4,6 +4,7 @@ import RevealAnimate from '../components/cards/RevealAnimate';
 import GoTop from '../components/cards/GoTop';
 import { motion, useIsPresent } from "framer-motion";
 import InitialTransition from '../components/cards/Transition';
+import PageTitle from '../components/cards/PageTitle';
 
 
 const ContactPage = () => {
@@ -49,7 +50,7 @@ const ContactPage = () => {
         <p className='text-xl'>Successfully sent!</p>
       </div>
       : ''}
-        <div className="uppercase tracking-[0.2rem] text-[10px] text-graytext rotate-[270deg] fixed top-64 left-10">contact</div>
+        <PageTitle pageTitle="contact" />
         <RevealAnimate>
           <div className="relative ">
               <img src="images/contact-pattern.jpg" className="w-[400px]" alt="" />

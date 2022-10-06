@@ -3,15 +3,16 @@ import RevealAnimate from '../components/cards/RevealAnimate';
 import { Fade } from 'react-awesome-reveal';
 import GoTop from '../components/cards/GoTop';
 import InitialTransition from '../components/cards/Transition'
+import PageTitle from '../components/cards/PageTitle';
 
 const AboutPage = () => {
   return (
     
-    <div className="px-[15%] bg-lightcolor pb-[10%] pt-[10%]">
-        <div className="uppercase tracking-[0.2rem] text-[10px] text-graytext rotate-[270deg] fixed top-64 left-10">About</div>
-      <div className="grid lg:grid-cols-2 items-center py-[15%]">
-        <div className="">
-            <h1 className="text-4xl font-extralight ">
+    <div className="px-[10%] lg:px-[15%] bg-lightcolor pb-[10%] pt-[10%] w-full">
+      <PageTitle pageTitle="about" />
+      <div className="grid md:grid-cols-2 items-center py-[15%]">
+        <div className="mb-10 lg:mb-0">
+            <h1 className="text-3xl lg:text-4xl font-extralight ">
             <span className="block mb-2"> <RevealAnimate>Self-taught engineer who </RevealAnimate> </span>
               
             <span className="block mb-2"> <RevealAnimate>specializes in full stack development </RevealAnimate></span>
@@ -27,11 +28,11 @@ const AboutPage = () => {
 
       </div>
 
-      <div className="grid grid-cols-6 pb-[10%] gap-y-16">
-        <div className="col-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-6 pb-[10%] gap-y-16">
+        <div className="md:col-span-2 hidden md:block">
           <p className="text-[10px] text-graytext uppercase tracking-[0.2rem]">01/ Back</p>
         </div>
-        <div className="col-span-4">
+        <div className="md:col-span-4">
           <RevealAnimate>
             <h1 className="text-xl font-bold">A little bit about myself.</h1>
           </RevealAnimate>
@@ -52,10 +53,10 @@ const AboutPage = () => {
               Love to read books and also <span className="font-medium">documentations</span>. Big fan of playing guitar & singing. 
           </p>
         </div>
-        <div className="col-span-2">
-          <p className="text-[10px] text-graytext uppercase tracking-[0.2rem]">02/ Technology</p>
+        <div className="md:col-span-2">
+          <p className="text-[10px] text-graytext uppercase tracking-[0.2rem] hidden md:block">02/ Technology</p>
         </div>
-        <div className="col-span-4">
+        <div className="md:col-span-4">
         <RevealAnimate>
           <h1 className="text-xl font-bold">What I use.</h1>
         </RevealAnimate>
@@ -80,13 +81,13 @@ const AboutPage = () => {
         </div>
         </div>
         <div className="col-span-2">
-          <p className="text-[10px] text-graytext uppercase tracking-[0.2rem]">02/ Contact</p>
+          <p className="text-[10px] text-graytext uppercase tracking-[0.2rem] hidden md:block">03/ Contact</p>
         </div>
         <div>
         <RevealAnimate>
           <h1 className="text-xl font-bold">Social.</h1>
         </RevealAnimate>
-        <div className="mt-4 flex gap-x-4 mb-10">
+        <div className="mt-4 flex gap-x-2 lg:gap-x-4 mb-10 ">
               <a className="underline" href="https://www.linkedin.com/in/jakhongirnagmatov/">Linkedin</a> <span>/</span>
               <a className="underline" href="https://t.me/jaykhans">Telegram</a>  <span>/</span>
               <a className="underline" href="https://twitter.com/jakhongir_mir">Twitter</a> <span>/</span>
@@ -98,7 +99,7 @@ const AboutPage = () => {
             <div className="mt-4"><a href="mailto:jahongirnagmatov@gmail.com" className="underline ">jahongirnagmatov@gmail.com</a></div>
         </div>
       </div>
-      <div>
+      <div className="mt-10">
         
           <Fade direction="up">
             <h1 className="text-3xl font-bold text-center">“I have no special talents, I am only passionately curious.”</h1>
