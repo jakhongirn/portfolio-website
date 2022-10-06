@@ -2,16 +2,14 @@ import React from 'react'
 import RevealAnimate from '../components/cards/RevealAnimate';
 import { Fade } from 'react-awesome-reveal';
 import GoTop from '../components/cards/GoTop';
-import { motion, useIsPresent } from "framer-motion";
 import InitialTransition from '../components/cards/Transition'
 
 const AboutPage = () => {
-  const isPresent = useIsPresent();
   return (
     
-    <div className="px-[15%] bg-lightcolor pb-[10%]">
+    <div className="px-[15%] bg-lightcolor pb-[10%] pt-[10%]">
         <div className="uppercase tracking-[0.2rem] text-[10px] text-graytext rotate-[270deg] fixed top-64 left-10">About</div>
-      <div className="grid grid-cols-2 items-center py-[15%]">
+      <div className="grid lg:grid-cols-2 items-center py-[15%]">
         <div className="">
             <h1 className="text-4xl font-extralight ">
             <span className="block mb-2"> <RevealAnimate>Self-taught engineer who </RevealAnimate> </span>

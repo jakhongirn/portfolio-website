@@ -5,7 +5,7 @@ import {Fade} from 'react-awesome-reveal'
 const Footer = () => {
   return (
     <div className="bg-black text-white px-[15%] pt-[10%]">
-      <h1 className="z-20 bg-black text-5xl text-center font-bold relative"><Fade direction="up" triggerOnce><span>Let's work together.</span></Fade><Fade triggerOnce delay={1000}><img src="images/circle-pattern.svg" className="absolute w-32 right-40 -top-16"/></Fade></h1>
+      <h1 className="z-20 bg-black text-5xl text-center font-bold relative"><Fade direction="up" triggerOnce><span>Let's work together.</span></Fade><Fade triggerOnce delay={1000}><img src="images/circle-pattern.svg" alt="" className="absolute w-32 right-40 -top-16"/></Fade></h1>
       <p className="text-center mt-4 text-graytext">
         I'm available for Freelancing & Partnership 
         
@@ -23,7 +23,7 @@ const Footer = () => {
         <a href="https://twitter.com/jakhongir_mir">
           <i class="fa-brands fa-lg fa-twitter"></i>
         </a>
-        <a href="">
+        <a href="https://instagram.com/jakhongir_mir">
           <i class="fa-brands fa-lg fa-instagram"></i>
         </a>
         <a href="https://t.me/jaykhans">

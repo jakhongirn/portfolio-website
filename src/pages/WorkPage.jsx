@@ -3,11 +3,9 @@ import { WorkImage, WorkContent } from '../components/cards/Work'
 import GhProject from '../components/cards/GhProject'
 import RevealAnimate from '../components/cards/RevealAnimate'
 import GoTop from '../components/cards/GoTop'
-import { motion, useIsPresent } from "framer-motion";
 import InitialTransition from '../components/cards/Transition'
 
 const WorkPage = () => {
-    const isPresent = useIsPresent()
   return (
     
     <div className="bg-lightgray py-[15%] px-[15%]">

@@ -10,8 +10,8 @@ const Hero = () => {
     <div className="bg-lightcolor h-screen w-full grid">
       <div className="w-full flex justify-center relative">
         <ScrollDown />
-        <div className=" w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] "></div>
-        <div className="w-full px-[15%] absolute grid grid-cols-1 lg:grid-cols-2 justify-center items-end top-[13%] lg:bottom-[13%]">
+        <div className="w-[200px] h-[200px] lg:w-[450px] lg:h-[450px]"></div>
+        <div className="w-full px-[15%] absolute grid grid-cols-1 lg:grid-cols-2 justify-center items-end top-[13%] md:bottom-[13%]">
           <div>
             
               <h1 className="text-5xl font-semibold ">
@@ -36,7 +36,7 @@ const Hero = () => {
   
           </div>
           <div>
-           <div className="w-100 flex justify-end"><img src="images/me-sticker.png" className="w-[380px]" alt="" /></div>
+           <div className="w-100 flex justify-center lg:justify-end"><img src="images/me-sticker.png" className="w-[380px]" alt="" /></div>
           </div>
           
         </div>

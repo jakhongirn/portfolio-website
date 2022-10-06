@@ -9,12 +9,12 @@ const Navbar = () => {
   }
 
   return (
-    <div className="lg:h-20 w-full fixed z-10 px-4 bg-transparent pt-5 lg:px-16">
-      <nav className="">
+    <div className="lg:h-20 w-full fixed z-10  bg-transparent pt-5 lg:px-16">
+      <nav>
         <div className="flex justify-between items-end text-graytext px-4">
         <div>
           <RevealAnimate>
-            <Link to="/" className="text-5xl text-black font-bold">
+            <Link to="/" className="text-3xl lg:text-5xl  text-black font-bold">
               JN
             </Link>
           </RevealAnimate>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu button */}
-        <div className="md:hidden pr-4 z-10">
+        <div className="lg:hidden pr-4 z-10">
           <button onClick={toggleHandler}>
             <svg
               fill="#000"
@@ -50,7 +50,7 @@ const Navbar = () => {
         <div
           className={
             isActive
-              ? 'absolute w-full top-16 z-50 text-center -mx-4 py-1 bg-white border rounded-b-xl lg:hidden'
+              ? 'absolute w-full top-16 z-50 text-center  py-1 bg-white border rounded-b-xl lg:hidden'
               : 'hidden'
           }
         >

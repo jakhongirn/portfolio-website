@@ -5,7 +5,7 @@ import FadeUp from './FadeUp';
 
 function WorkContent(props) {
   return (
-    <div className={`col-span-2 relative ${props.class}`}>
+    <div className={`lg:col-span-2 relative ${props.class}`}>
       <RevealAnimate>
         <h1 className="mt-4 text-5xl font-bold">{props.title}</h1>
       </RevealAnimate>
@@ -20,13 +20,12 @@ function WorkContent(props) {
         <Button
         btnName="View project"
         ></Button>
-     
     </div>
   )
 }
 function WorkImage(props) {
   return (
-    <div className={`${props.col}`}>
+    <div className={`${props.classImg}`}>
       <RevealAnimate><img src={`images/${props.imageName}`} className="rounded-xl" alt="" /></RevealAnimate>
     </div>
   )
