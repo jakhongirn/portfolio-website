@@ -1,11 +1,10 @@
 import React from 'react'
-import { WorkContent, WorkImage } from './cards/Work';
 
 const Works = () => {
   return (
     <div className="bg-lightcolor px-[15%] py-[5%]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-20">
-      <WorkContent 
+      {/* <WorkContent 
             class="lg:mr-28 "
             title="meras electro mechanic website"
             type="Front-end App"
@@ -28,7 +27,7 @@ const Works = () => {
             type="Web app"
             content="Website that offers medical articles and papers to educate people about HIV."
         />
-        <WorkImage imageName="medicine.png" />
+        <WorkImage imageName="medicine.png" /> */}
         
       </div>
     </div>

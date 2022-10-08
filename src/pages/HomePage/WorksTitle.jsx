@@ -1,7 +1,6 @@
 import React from 'react';
-import RevealAnimate from './cards/RevealAnimate';
-import FadeUp from './cards/FadeUp';
-
+import RevealAnimate from '../../components/cards/RevealAnimate';
+import FadeUp from '../../components/cards/FadeUp'
 const WorksTitle = () => {
   return (
       <div className="bg-white py-[10%] px-[15%] ">

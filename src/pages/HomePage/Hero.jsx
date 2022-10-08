@@ -1,8 +1,8 @@
 import React from 'react'
-import RevealAnimate from './cards/RevealAnimate';
-import FadeUp from './cards/FadeUp';
-import ScrollDown from './cards/ScrollDown';
-import Button from './cards/Button';
+import RevealAnimate from '../../components/cards/RevealAnimate';
+import FadeUp from '../../components/cards/FadeUp';
+import ScrollDown from '../../components/cards/ScrollDown';
+import Button from '../../components/cards/Button';
 
 const Hero = () => {
 

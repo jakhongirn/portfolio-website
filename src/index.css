@@ -181,3 +181,19 @@ body {
   background-color: #000;
   z-index: 1000;
 }
+
+.circ1,
+          .circ3 {
+            fill: none;
+          }
+          .circ2 {
+            clip-path: url(#clip-path);
+          }
+          .circ3 {
+            stroke: #fff;
+            stroke-miterlimit: 10;
+          }
+
+#wwm-decor {
+  transform: translate(0px, 0px)
+}
