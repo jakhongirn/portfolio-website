@@ -9,7 +9,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="lg:h-20 w-full fixed z-10  bg-transparent pt-5 lg:px-16 bg-lightcolor lg:bg-transparent">
+    <div className="lg:h-20 w-full fixed z-50  bg-transparent pt-5 lg:px-16 bg-lightcolor lg:bg-transparent">
       <nav>
         <div className="flex justify-between items-end text-graytext px-4">
         <div>
