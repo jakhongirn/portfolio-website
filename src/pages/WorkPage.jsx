@@ -5,10 +5,30 @@ import GoTop from '../components/cards/GoTop'
 import InitialTransition from '../components/cards/Transition'
 import PageTitle from '../components/cards/PageTitle'
 import Work from '../components/cards/Work'
-
+import works from '../components/cards/dataWorks'
 
 const WorkPage = () => {
 
+  const displayWork = works.map((work, index) => {
+
+    function isEven() {
+      if (index % 2 === 0) {
+        return true
+      } else {
+        return false
+      }
+    }
+
+    return (
+      <Work 
+        key={index}
+        title={work.title}
+        content={work.content}
+        imageName={work.imageName}
+        classContent={`col-span-2 ${isEven() ? 'lg:ml-28' : 'lg:mr-28 lg:order-first'}`}
+      />
+    )
+  })
 
   return (
     <div className="bg-lightgray py-[15%] px-[10%] md:px-[15%]">
@@ -22,7 +42,7 @@ const WorkPage = () => {
         </div>
       </RevealAnimate>
       <div className="mt-10 pt-[10%] ">
-        <Work />
+        {displayWork}
       </div>
 
       <div className="mt-36">
