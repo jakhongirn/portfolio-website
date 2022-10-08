@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-black text-white px-[15%] pt-[10%]">
       <h1
-        className="z-20 bg-black text-4xl md:text-5xl text-center font-bold relative"
+        className="z-20 text-4xl md:text-5xl text-center font-bold relative"
       >
         <Fade direction="up" triggerOnce>
           <span>Let's work together.</span>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import RevealAnimate from '../components/cards/RevealAnimate'
+import InitialTransition from '../components/cards/Transition'
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false)
@@ -9,7 +10,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="lg:h-20 w-full fixed z-50  bg-transparent pt-5 lg:px-16 bg-lightcolor lg:bg-transparent">
+    <div className="lg:h-20 w-full fixed z-50   bg-transparent pt-5 lg:px-16 bg-lightcolor lg:bg-transparent">
       <nav>
         <div className="flex justify-between items-end text-graytext px-4">
         <div>
@@ -50,37 +51,53 @@ const Navbar = () => {
         <div
           className={
             isActive
-              ? 'absolute w-full top-16 z-50 text-center  py-1 bg-white border rounded-b-xl lg:hidden'
+              ? 'absolute w-full h-screen top-0 z-50 text-center bg-black text-white border rounded-b-xl lg:hidden'
               : 'hidden'
           }
         >
+          <InitialTransition />
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl'>
           <div className="my-2">
-            <Link
-              onClick={toggleHandler}
-              to={'/about'}
-              className="px-8 py-1 rounded-full hover:bg-black hover:text-white duration-300 "
-            >
-              about
-            </Link>
+              
+              <Link
+                onClick={toggleHandler}
+                to={'/'}
+                className="px-8 py-1 rounded-full hover:bg-black hover:text-white duration-300 "
+              >
+                home
+              </Link>
+            </div>
+
+            <div className="my-2">
+              
+              <Link
+                onClick={toggleHandler}
+                to={'/about'}
+                className="px-8 py-1 rounded-full hover:bg-black hover:text-white duration-300 "
+              >
+                about
+              </Link>
+            </div>
+            <div className="my-2">
+              <Link
+                onClick={toggleHandler}
+                to={'/works'}
+                className="px-8 py-1 rounded-full hover:bg-black hover:text-white duration-300 "
+              >
+                works
+              </Link>
+            </div>
+            <div className="my-2">
+              <Link
+                onClick={toggleHandler}
+                to={'/contact'}
+                className="px-8 py-1 rounded-full hover:bg-black hover:text-white duration-300 "
+              >
+                contact
+              </Link>
+            </div>
           </div>
-          <div className="my-2">
-            <Link
-              onClick={toggleHandler}
-              to={'/works'}
-              className="px-8 py-1 rounded-full hover:bg-black hover:text-white duration-300 "
-            >
-              works
-            </Link>
-          </div>
-          <div className="my-2">
-            <Link
-              onClick={toggleHandler}
-              to={'/contact'}
-              className="px-8 py-1 rounded-full hover:bg-black hover:text-white duration-300 "
-            >
-              contact
-            </Link>
-          </div>
+          <InitialTransition />
         </div>
       </nav>
     </div>
