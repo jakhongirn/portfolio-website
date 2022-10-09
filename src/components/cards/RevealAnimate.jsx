@@ -12,8 +12,8 @@ const RevealAnimate = (props) => {
 
   return (
       <span ref={myRef} className="block-reveal-animation">
-      <div className={`${inViewport & enterCount==1 ? 'block-reveal-animation__element' : ''}`}>{props.children}</div>
-      <span className={`${inViewport & enterCount==1 ? 'block-reveal-animation__block' : ''}`}></span>
+      <div className={`${inViewport & enterCount===1 ? 'block-reveal-animation__element' : ''}`}>{props.children}</div>
+      <span className={`${inViewport & enterCount===1 ? 'block-reveal-animation__block' : ''}`}></span>
     </span>
   )
 }

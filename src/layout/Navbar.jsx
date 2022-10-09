@@ -1,12 +1,23 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import RevealAnimate from '../components/cards/RevealAnimate'
-import InitialTransition from '../components/cards/Transition'
-
+import { motion } from 'framer-motion'
 const Navbar = () => {
   const [isActive, setActive] = useState(false)
   function toggleHandler() {
     setActive(!isActive)
+  }
+
+  const item={
+    exit:{
+      opacity:0,
+      height:0,
+      transition:{
+        ease:"easeInOut",
+        duration:0.3,
+        delay:1.2
+      }
+    }
   }
 
   return (
@@ -48,14 +59,17 @@ const Navbar = () => {
         </div>
       </div>
         {/* Mobile menu */}
-        <div
-          className={
-            isActive
-              ? 'absolute w-full h-screen top-0 z-50 text-center bg-black text-white border rounded-b-xl lg:hidden'
-              : 'hidden'
-          }
+        {
+          isActive && (
+            <motion.div
+          className='absolute w-full top-0 z-50 text-center bg-black text-white border rounded-b-xl lg:hidden'
+          variants={item}
+              initial={{height:0,opacity:0}}
+              animate={{height:"100vh", opacity:1}}
+              transition={{duration:1}}
+              exit="exit"
         >
-          <InitialTransition />
+          <button onClick={toggleHandler} className='absolute top-4 right-6 text-2xl md:text-4xl bg-white text-black px-5 py-3 md:px-6 md:py-4 rounded-full'>X</button>
           <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl'>
           <div className="my-2">
               
@@ -97,8 +111,9 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <InitialTransition />
-        </div>
+        </motion.div>
+          )
+        }
       </nav>
     </div>
   )
