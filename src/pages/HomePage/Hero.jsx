@@ -31,9 +31,6 @@ const Hero = () => {
             <FadeUp>
               <a href="/works"><Button btnName="SEE MY WORKS" btnTitleClass="uppercase font-medium"/></a>
               </FadeUp>
-            
-
-  
           </div>
           <div>
            <div className="w-100 flex justify-center lg:justify-end"><img src="images/me-sticker.png" className="w-[380px]" alt="" /></div>

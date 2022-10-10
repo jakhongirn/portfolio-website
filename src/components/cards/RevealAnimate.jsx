@@ -1,19 +1,19 @@
 import React, {useRef} from 'react'
-import { useInViewport } from 'react-in-viewport';
+import { motion, useInView } from 'framer-motion';
 
 const RevealAnimate = (props) => {
 
-  const myRef = useRef();
+  const myRef = useRef(null);
 
-  const { inViewport, enterCount} = useInViewport(
-    myRef,
-    props
-  );
+  const isInView = useInView(myRef, {once: true})
+  
+
+
 
   return (
       <span ref={myRef} className="block-reveal-animation">
-      <div className={`${inViewport & enterCount===1 ? 'block-reveal-animation__element' : ''}`}>{props.children}</div>
-      <span className={`${inViewport & enterCount===1 ? 'block-reveal-animation__block' : ''}`}></span>
+<div className={`${isInView ? 'block-reveal-animation__element' : 'invisible'}`}>{props.children}</div>     
+ <span className={`${isInView ? 'block-reveal-animation__block' : ''}`}></span>
     </span>
   )
 }
