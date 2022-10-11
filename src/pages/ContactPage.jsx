@@ -39,6 +39,7 @@ const ContactPage = () => {
     }
   }, [status])
 
+  const [inputClass, setInputClass] = useState('block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none')
   return (
     
     <div className="bg-lightgray py-[15%] px-[15%] md:px-[15%]">
@@ -56,10 +57,10 @@ const ContactPage = () => {
         </RevealAnimate>
         <p className="pt-[10%]">Do you have questions to ask or request to collaborate with me, feel free to contact me.</p>
         <form action="" ref={form} onSubmit={sendEmail} >
-            <input className="block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none" type="text" name="name" placeholder='Your Name'/>
-            <input className="block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none" type="email" name="email" placeholder='Your mail'/>
-            <input className="block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none" type="text" name="subject" placeholder='Subject'/>
-            <textarea className="block py-2 my-8 border-b-gray-200 border-b-2 w-full focus:outline-none" rows="5" name="message" placeholder='Message'/>
+            <input className={`${inputClass}`} type="text" name="name" placeholder='Your Name' required/>
+            <input className={`${inputClass}`} type="email" name="email" placeholder='Your mail' required/>
+            <input className={`${inputClass}`} type="text" name="subject" placeholder='Subject' required/>
+            <textarea className={`${inputClass}`} rows="5" name="message" placeholder='Message' required/>
           <button type="submit" className="py-2 px-4 float-right bg-black border-2 border-black text-white hover:bg-white hover:text-black">Send</button>
         </form>
         <GoTop />
