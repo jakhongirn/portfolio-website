@@ -1,7 +1,8 @@
 import React from 'react'
 import Button from '../components/cards/Button'
-import { Fade } from 'react-awesome-reveal'
 import CircleSvg from '../components/cards/CircleSvg'
+import { motion } from 'framer-motion'
+import FadeUp from '../components/cards/FadeUp'
 
 const Footer = () => {
   return (
@@ -9,15 +10,17 @@ const Footer = () => {
       <h1
         className="z-20 text-4xl md:text-5xl text-center font-bold relative"
       >
-        <Fade direction="up" triggerOnce>
+        <FadeUp delay='1'>
           <span>Let's work together.</span>
-        </Fade>
-        <Fade triggerOnce delay={1000}>
-          <CircleSvg
-            alt=""
-            className=""
-          />
-        </Fade>
+        </FadeUp>
+        <motion.div 
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{delay: 1, duration: 0.5}}
+          viewport={{once: true}}
+          >
+          <CircleSvg/>
+        </motion.div>
       </h1>
 
       <p className="text-center mt-4 text-graytext">

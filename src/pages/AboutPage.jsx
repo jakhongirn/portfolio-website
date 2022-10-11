@@ -1,6 +1,6 @@
 import React from 'react'
 import RevealAnimate from '../components/cards/RevealAnimate';
-import { Fade } from 'react-awesome-reveal';
+import FadeUp from '../components/cards/FadeUp';
 import GoTop from '../components/cards/GoTop';
 import InitialTransition from '../components/cards/Transition'
 import PageTitle from '../components/cards/PageTitle';
@@ -101,9 +101,9 @@ const AboutPage = () => {
       </div>
       <div className="mt-10">
         
-          <Fade direction="up">
+          <FadeUp>
             <h1 className="text-3xl font-bold text-center">“I have no special talents, I am only passionately curious.”</h1>
-          </Fade>
+          </FadeUp>
         
         <div className="flex justify-end">
           <RevealAnimate className="">

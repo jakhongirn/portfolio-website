@@ -3,7 +3,7 @@ import FadeUp from './FadeUp'
 
 const Button = (props) => {
   return (
-    <FadeUp>
+    <FadeUp delay='1.5'>
       <button className={`cta mt-10 text-lg font-semibold lowercase ${props.btnClassName}`}>
         <span className={props.btnTitleClass}>{props.btnName}</span>
         <svg

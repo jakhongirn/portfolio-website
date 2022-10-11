@@ -1,12 +1,19 @@
-import React from 'react';
-import { Fade } from 'react-awesome-reveal';
+import React, { useRef } from 'react';
+import { motion} from 'framer-motion'; 
 
 const FadeUp = (props) => {
+  const scrollRef = useRef();
   return (
-    <Fade direction="up" delay={1000} duration={500} triggerOnce>
+    <motion.div 
+      ref={scrollRef} 
+      initial={{opacity: 0, y: 100}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{ease: 'easeOut', duration: 0.5, delay: props.delay }}
+      viewport={{once: true}}
+      >
         {props.children}
-    </Fade>
-  )
+    </motion.div>
+    )
 }
 
 export default FadeUp
