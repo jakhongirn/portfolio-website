@@ -1,12 +1,11 @@
 import React from 'react'
-import GhProject from '../components/cards/GhProject'
 import RevealAnimate from '../components/cards/RevealAnimate'
 import GoTop from '../components/cards/GoTop'
 import InitialTransition from '../components/cards/Transition'
 import PageTitle from '../components/cards/PageTitle'
 import Work from '../components/cards/Work'
 import works from '../components/cards/dataWorks'
-
+import ghProjects from '../components/cards/ghProjects'
 const WorkPage = () => {
 
   const displayWork = works.map((work, index) => {
@@ -25,8 +24,21 @@ const WorkPage = () => {
         title={work.title}
         content={work.content}
         imageName={work.imageName}
+        type={work.type}
         classContent={`col-span-2 ${isEven() ? 'lg:ml-28' : 'lg:mr-28 lg:order-first'}`}
       />
+    )
+  })
+
+  const displayGhProjects = ghProjects.map((ghProject, index) => {
+    return (
+      <div key={index} className="flex gap-x-5 mt-10 items-center">
+      <p className="text-graytext mr-4 tracking-widest hidden md:block">{ghProject.projectNumber}</p>
+      <p className="underline">&lt;src/&gt; </p>
+      <a className="text-2xl underline" href={ghProject.projectLink}>
+        {ghProject.projectName}
+      </a>
+    </div>
     )
   })
 
@@ -49,17 +61,7 @@ const WorkPage = () => {
         <RevealAnimate>
           <h1 className="text-4xl font-bold">GitHub Projects.</h1>
         </RevealAnimate>
-        <GhProject projectNumber="/ 01" projectName="blog-website" />
-        <GhProject projectNumber="/ 02" projectName="react-todo app" />
-        <GhProject
-          projectNumber="/ 03"
-          projectName="contact-form (with telegram)"
-        />
-        <GhProject projectNumber="/ 04" projectName="react-intro app" />
-        <GhProject projectNumber="/ 05" projectName="Quiz maker" />
-        <GhProject projectNumber="/ 06" projectName="signup-mail form" />
-        <GhProject projectNumber="/ 07" projectName="instagram-follower bot" />
-        <GhProject projectNumber="/ 08" projectName="to-do app (node.js)" />
+        {displayGhProjects}
       </div>
       <GoTop />
       <InitialTransition />
