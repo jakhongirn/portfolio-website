@@ -36,7 +36,7 @@ const WorkPage = () => {
       <div key={index} className="flex gap-x-5 mt-10 items-center">
       <p className="text-graytext mr-4 tracking-widest hidden md:block">{ghProject.projectNumber}</p>
       <p className="underline">&lt;src/&gt; </p>
-      <a className="text-2xl underline" href={ghProject.projectLink}>
+      <a className="text-2xl underline" href={ghProject.projectLink} target='_blank' rel="noreferrer">
         {ghProject.projectName}
       </a>
     </div>
