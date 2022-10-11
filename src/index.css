@@ -81,14 +81,23 @@ body {
     transform-origin: left;
     animation-mode: forwards;
     transform: scaleX(1);
+
+    -webkit-transform-origin: left;
+    -webkit-transform: scaleX(1);
   }
   50% {
     transform-origin: right;
     transform: scaleX(1);
+
+    -webkit-transform-origin: right;
+    -webkit-transform: scaleX(1);
   }
   100% {
     transform-origin: right;
     transform: scaleX(0);
+
+    -webkit-transform-origin: right;
+    -webkit-transform: scalex(0);
   }
 }
 
@@ -111,6 +120,11 @@ body {
   animation-delay: 1s;
   animation-duration: 0.01s;
   animation-fill-mode: both;
+
+  -webkit-animation-name: reveal;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 0.01s;
+  -webkit-animation-fill-mode: both;
 }
 .block-reveal-animation__block {
   position: absolute;
@@ -127,6 +141,14 @@ body {
   animation-fill-mode: both;
   transform: scaleX(0);
   transform-origin: left;
+
+  -webkit-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: move;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform: scaleX(0);
+  -webkit-transform-origin: left;
 }
 
 
@@ -137,6 +159,7 @@ body {
   border: none;
   background: none;
   
+  -webkit-transition: all 0.3s ease;
  }
  
  .cta:before {
@@ -150,6 +173,8 @@ body {
   width: 45px;
   height: 45px;
   transition: all 0.4s ease;
+
+  -webkit-transition: all 0.4s ease;
  }
  
  .cta span {
@@ -168,10 +193,14 @@ body {
  
  .cta:hover  {
   transform: translateX(12px);
+
+  -webkit-transform: translateX(12px)
  }
  
  .cta:active {
   transform: scale(0.95);
+
+  -webkit-transform: scale(0.95);
  }
 
  .privacy-screen {
@@ -197,5 +226,6 @@ body {
           }
 
 #wwm-decor {
-  transform: translate(0px, 0px)
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
 }
