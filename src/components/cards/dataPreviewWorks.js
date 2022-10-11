@@ -1,5 +1,6 @@
 const works = [
     {
+      href: 'https://www.meras.uz/',
         imageName: "meras.uz.png",
         class: "lg:ml-28",
         title: "meras electro mechanic website",
@@ -16,6 +17,7 @@ const works = [
         imageName: "travella.png",
       },
       {
+        href: 'http://smirkhamidova.com/',
         imageName: "medicine.png",
         class: "lg:ml-28",
         title: "medical and informational web page",

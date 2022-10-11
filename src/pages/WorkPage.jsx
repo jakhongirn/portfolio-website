@@ -23,6 +23,7 @@ const WorkPage = () => {
         key={index}
         title={work.title}
         content={work.content}
+        href={work.href}
         imageName={work.imageName}
         type={work.type}
         classContent={`col-span-2 ${isEven() ? 'lg:ml-28' : 'lg:mr-28 lg:order-first'}`}

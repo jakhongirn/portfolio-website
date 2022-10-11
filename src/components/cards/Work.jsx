@@ -24,7 +24,10 @@ export default function Work(props) {
         <FadeUp delay='0.75'>
           <p className="mt-10 font-medium text-lg">{props.content}</p>
         </FadeUp>
-        <Button btnName="View project"></Button>
+        <a href={props.href} target='_blank' rel='noreferrer'>
+          <Button
+          btnName="View project"></Button>
+        </a>
       </div>
     </div>
   )
