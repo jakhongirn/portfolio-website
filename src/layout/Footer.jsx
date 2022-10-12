@@ -35,19 +35,19 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex justify-center gap-x-6 pt-[10%]">
-        <a href="https://github.com/jaykhans">
+        <a href="https://github.com/jaykhans" target='_blank' rel="noreferrer">
           <i className="fa-brands fa-lg fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/jakhongirnagmatov/">
+        <a href="https://www.linkedin.com/in/jakhongirnagmatov/" target='_blank' rel="noreferrer">
           <i className="fa-brands fa-lg fa-linkedin"></i>
         </a>
-        <a href="https://twitter.com/jakhongir_mir">
+        <a href="https://twitter.com/jakhongir_mir" target='_blank' rel="noreferrer">
           <i className="fa-brands fa-lg fa-twitter"></i>
         </a>
-        <a href="https://instagram.com/jakhongir_mir">
+        <a href="https://instagram.com/jakhongir_mir" target='_blank' rel="noreferrer">
           <i className="fa-brands fa-lg fa-instagram"></i>
         </a>
-        <a href="https://t.me/jaykhans">
+        <a href="https://t.me/jaykhans" target='_blank' rel="noreferrer">
           <i className="fa-brands fa-lg fa-telegram"></i>
         </a>
       </div>
