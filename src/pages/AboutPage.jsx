@@ -33,7 +33,7 @@ const AboutPage = () => {
 
         <div className="justify-self-end">
           <RevealAnimate>
-            <img src="images/me.png" alt="" className="w-80" />
+            <img src="images/me.jpg" alt="" className="w-80" />
           </RevealAnimate>
         </div>
       </div>
