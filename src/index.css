@@ -44,6 +44,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
+  -webkit-box-sizing: border-box;
 }
 
 html {
@@ -101,12 +103,36 @@ body {
   }
 }
 
+@-webkit-keyframes move {
+  47% {
+    animation-mode: forwards;
+    -webkit-transform-origin: left;
+    -webkit-transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform-origin: right;
+    -webkit-transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+    -webkit-transform: scalex(0);
+  }
+}
+
 @keyframes reveal {
   from {
     opacity: 0;
-  }
+    }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes reveal {
+  from {
+    -webkit-opacity: 0;
+    }
+  to {
+    -webkit-opacity: 1;
   }
 }
 
@@ -121,6 +147,7 @@ body {
   animation-duration: 0.01s;
   animation-fill-mode: both;
 
+  -webkit-opacity: 0;
   -webkit-animation-name: reveal;
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 0.01s;
@@ -238,4 +265,9 @@ body {
 }
 .animate-ping {
   animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite !important;
+}
+
+.rotate90 {
+    transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
