@@ -42,7 +42,7 @@ const HomePage = () => {
           </FadeUp>
         </div>
       </div>
-      
+
       <div className="w-full bg-lightcolor px-[10%] md:px-[15%]  ">
         {displayWork}
       </div>

@@ -57,8 +57,6 @@ body {
   padding: 0;
 }
 
-
-
 .hero-circle {
   height: 450px;
   width: 450px;
@@ -70,9 +68,11 @@ body {
 .circ3 {
   fill: none;
 }
+
 .circ2 {
   clip-path: url(#clip-path);
 }
+
 .circ3 {
   stroke: #fff;
   stroke-miterlimit: 10;
@@ -122,7 +122,7 @@ body {
 @keyframes reveal {
   from {
     opacity: 0;
-    }
+  }
   to {
     opacity: 1;
   }
@@ -130,7 +130,7 @@ body {
 @-webkit-keyframes reveal {
   from {
     -webkit-opacity: 0;
-    }
+  }
   to {
     -webkit-opacity: 1;
   }
@@ -178,59 +178,58 @@ body {
   -webkit-transform-origin: left;
 }
 
-
 .cta {
   position: relative;
   padding: 12px 18px;
   transition: all 0.3s ease;
   border: none;
   background: none;
-  
+
   -webkit-transition: all 0.3s ease;
- }
- 
- .cta:before {
+}
+
+.cta:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   display: block;
   border-radius: 50px;
-  background: #E8E8E8;
+  background: #e8e8e8;
   width: 45px;
   height: 45px;
   transition: all 0.4s ease;
 
   -webkit-transition: all 0.4s ease;
- }
- 
- .cta span {
+}
+
+.cta span {
   position: relative;
- }
- 
- .cta svg {
+}
+
+.cta svg {
   position: relative;
   margin-left: 3px;
   margin-bottom: 2px;
- }
- .cta:hover:before {
+}
+.cta:hover:before {
   width: 100%;
-  background: #E8E8E8;
- }
- 
- .cta:hover  {
+  background: #e8e8e8;
+}
+
+.cta:hover {
   transform: translateX(12px);
 
-  -webkit-transform: translateX(12px)
- }
- 
- .cta:active {
+  -webkit-transform: translateX(12px);
+}
+
+.cta:active {
   transform: scale(0.95);
 
   -webkit-transform: scale(0.95);
- }
+}
 
- .privacy-screen {
+.privacy-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -241,16 +240,16 @@ body {
 }
 
 .circ1,
-          .circ3 {
-            fill: none;
-          }
-          .circ2 {
-            clip-path: url(#clip-path);
-          }
-          .circ3 {
-            stroke: #fff;
-            stroke-miterlimit: 10;
-          }
+.circ3 {
+  fill: none;
+}
+.circ2 {
+  clip-path: url(#clip-path);
+}
+.circ3 {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
 
 #wwm-decor {
   transform: translate(0px, 0px);
@@ -258,9 +257,10 @@ body {
 }
 
 @keyframes ping {
-  75%, 100% {
-      transform: scale(1.5);
-      opacity: 0;
+  75%,
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
   }
 }
 .animate-ping {
@@ -268,6 +268,6 @@ body {
 }
 
 .rotate90 {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
 }
