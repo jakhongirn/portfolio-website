@@ -38,7 +38,7 @@ const HomePage = () => {
         </RevealAnimate>
         <div>
           <FadeUp>
-            <p className="mt-10">These are a selection of my recent works.</p>
+            <p className="mt-10">These are the selection of my recent works.</p>
           </FadeUp>
         </div>
       </div>
