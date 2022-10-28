@@ -39,6 +39,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth !important;
 }
 
 *::before,
@@ -83,23 +84,14 @@ body {
     transform-origin: left;
     animation-mode: forwards;
     transform: scaleX(1);
-
-    -webkit-transform-origin: left;
-    -webkit-transform: scaleX(1);
   }
   50% {
     transform-origin: right;
     transform: scaleX(1);
-
-    -webkit-transform-origin: right;
-    -webkit-transform: scaleX(1);
   }
   100% {
     transform-origin: right;
     transform: scaleX(0);
-
-    -webkit-transform-origin: right;
-    -webkit-transform: scalex(0);
   }
 }
 
@@ -142,17 +134,19 @@ body {
 }
 .block-reveal-animation__element {
   opacity: 0;
-  animation-name: reveal;
-  animation-delay: 1s;
-  animation-duration: 0.01s;
-  animation-fill-mode: both;
-
   -webkit-opacity: 0;
+  animation-name: reveal;
   -webkit-animation-name: reveal;
+  animation-delay: 1s;
   -webkit-animation-delay: 1s;
+
+  animation-duration: 0.01s;
   -webkit-animation-duration: 0.01s;
-  -webkit-animation-fill-mode: both;
+
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;  
 }
+
 .block-reveal-animation__block {
   position: absolute;
   bottom: 0;
@@ -160,21 +154,25 @@ body {
   left: 0;
   right: 0;
   transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+
   animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+
   animation-duration: 1s;
+  -webkit-animation-duration: 1s;
   background-color: #000;
 
   animation-name: move;
-  animation-fill-mode: both;
-  transform: scaleX(0);
-  transform-origin: left;
-
-  -webkit-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-animation-delay: 0.5s;
-  -webkit-animation-duration: 1s;
   -webkit-animation-name: move;
+
+  animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
+
+  transform: scaleX(0);
   -webkit-transform: scaleX(0);
+
+  transform-origin: left;
   -webkit-transform-origin: left;
 }
 
@@ -267,7 +265,18 @@ body {
   animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite !important;
 }
 
+@-webkit-keyframes ping {
+  75%,
+  100% {
+    -webkit-transform: scale(1.5);
+    -webkit-opacity: 0;
+  }
+}
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite !important;
+}
+
 .rotate90 {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
+  transform: rotate(-89.99deg);
+  -webkit-transform: rotate(-89.99deg);
 }
