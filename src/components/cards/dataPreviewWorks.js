@@ -9,6 +9,7 @@ const works = [
       "Business website for presenting their services, products and interacting with business owners.",
   },
   {
+    href: "https://travel-visa.vercel.app/",
     class: "lg:mr-28",
     title: "travella - online visa services & information check",
     type: "Full Stack App",

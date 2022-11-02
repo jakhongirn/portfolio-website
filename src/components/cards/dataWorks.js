@@ -9,6 +9,7 @@ const works = [
       "Business website for presenting their services, products and interacting with business owners.",
   },
   {
+    href: "https://travel-visa.vercel.app/",
     imageName: "travella.jpg",
     class: "lg:mr-28",
     title: "travella - online visa services & information check",
@@ -43,10 +44,10 @@ const works = [
       "Website for company asd that offers interior and exterior design services for all types of buildings.",
   },
   {
-    href: 'https://www.meras.uz/',
+    href: 'https://myportfolio-jakhongir.netlify.app/',
     imageName: "myportfolio.jpg",
     class: "lg:mr-28",
-    title: "portfolio/cv website ",
+    title: "portfolio/cv website",
     type: "Front-end App",
     content: "Older version of my portfolio website",
   },
