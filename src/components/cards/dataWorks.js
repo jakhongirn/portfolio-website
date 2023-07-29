@@ -9,6 +9,15 @@ const works = [
       "Business website for presenting their services, products and interacting with business owners.",
   },
   {
+    href: 'https://www.sg-umra.uz/',
+    imageName: "sg-umra.jpg",
+    class: "lg:ml-28",
+    title: "Tour agency website",
+    type: "Front-end App",
+    content:
+      "Offers Umrah package for pilgrims seeking a carefree, luxurious journey to Makkah and Madinah.",
+  },
+  {
     href: "https://travel-visa.vercel.app/",
     imageName: "travella.jpg",
     class: "lg:mr-28",
