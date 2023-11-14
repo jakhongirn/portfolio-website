@@ -1,6 +1,6 @@
 const works = [
   {
-    href: "https://www.edwork.uz/",
+    href: "https://edwork.uz/",
     imageName: "edwork.uz.png",
     class: "lg:ml-28",
     title: "Educational institution website",
