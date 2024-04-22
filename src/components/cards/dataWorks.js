@@ -18,7 +18,7 @@ const works = [
       "Business website for presenting their services, products and interacting with business owners.",
   },
   {
-    href: 'https://www.sg-umra.uz/',
+    href: 'https://sg-umra.vercel.app',
     imageName: "sg-umra.jpg",
     class: "lg:mr-28",
     title: "Tour agency website",
@@ -35,7 +35,7 @@ const works = [
     content: "Website that provides the simplest solution to process your travel visa.",
   },
   {
-    href: 'https://www.ecogosht.uz/',
+    href: 'project-bgk.vercel.app',
     imageName: "ecogosht.jpg",
     class: "lg:ml-28",
     title: "ecogosht - meat products and services",
